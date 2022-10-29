@@ -1,0 +1,71 @@
+footer{
+    outline: 5px solid rgb(116, 79, 0);
+}
+
+footer div a{
+    color: rgb(116, 79, 0);
+    transition: ease 0.2s;
+}
+footer div a:hover{
+    color: rgb(160, 109, 0);
+    transition: ease 0.2s;
+}
+
+::-moz-selection{
+    background-color: rgb(116, 79, 0);
+}
+
+::-selection{
+    background-color: rgb(116, 79, 0);
+}
+
+.MainContent{
+    border: 5px solid rgb(116, 79, 0);
+}
+
+.freedomBG{
+    background-image: url(IMG/freedom.png);
+}
+.beardBG{
+    background-image: url(IMG/beard.png);
+}
+.emissionBG{
+    background-image: url(IMG/emission.png);
+}
+.bloodsuckerBG{
+    background-image: url(IMG/bloodsatk.png);
+}
+
+.wikiinfocontainer{
+    outline: 3px solid rgb(116, 79, 0);
+}
+.wikiinfobox{
+    outline: 3px solid rgb(116, 79, 0);
+}
+
+.TopNav{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%,rgb(77, 56, 0) 100%);
+}
+
+.MenuIconTopNav:hover, .MenuIconTopNav:focus {
+    background-color: rgb(116, 79, 0);
+}
+
+.TopNavDropContent a:hover {
+    background-color: rgb(116, 79, 0);
+}
+
+.newstile:hover .newsimg {
+    outline: 3px solid rgb(116, 79, 0);
+    transition: 0.2s ease; 
+}
+
+.maintile:hover {
+    outline: 3px solid rgb(116, 79, 0);
+    transition: 0.3s ease; 
+}
+
+.TopNavContentBox:hover {
+    background-color: rgb(116, 79, 0);
+    transition: 0.2s ease; 
+}

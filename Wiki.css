@@ -1,0 +1,800 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    margin: 0;
+    background-image: url(img/Metal.png);
+    background-color: #000000;
+    line-height: 28px;
+    font-family: 'rabbit';
+}
+
+a{
+    text-decoration: none;
+}
+
+footer div a{
+    text-decoration: none;
+    color: rgb(75, 0, 0);
+    transition: ease 0.2s;
+    font-size: 4.2vw;
+}
+footer div a:hover{
+    color: rgb(138, 0, 0);
+    transition: ease 0.2s;
+}
+
+button{
+    background-color: transparent;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer{
+    width: 100%;
+    height: 6.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    outline: 5px solid rgb(75, 0, 0);
+    background-color: #00000063;
+    font-family: rabbit;
+    color: rgb(230, 230, 230);
+    font-size: 1.3rem;
+}
+
+::-moz-selection{
+    background-color: rgb(75, 0, 0);
+}
+
+::-selection{
+    background-color: rgb(75, 0, 0);
+}
+/* ^^^^ Global Stuff ^^^^*/
+
+#btnControl {
+    display: none;
+}
+
+.TopNavMWImage{
+    display: none;
+    background-color: none;
+}
+
+.TopNav{
+    background: linear-gradient(90deg, rgba(85, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.9) 100%);
+    width: 100%;
+    height: 5rem;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 97;
+}
+
+.topnavlogobox{
+    height: 17vw;
+    max-height: 5rem;
+}
+
+.LogoTopNav{
+    height: 17vw;
+    max-height: 5rem;
+}
+
+.TopNavMetroBox{
+    color: rgb(212, 212, 212);
+    display: flex;
+    flex-wrap: nowrap;
+    width: auto;
+    font-family: 'rabbit';
+    font-size: 1.5rem;
+    align-items: center;
+    height: 5rem;
+
+}
+
+.TopNavMWText{
+    color: rgb(212, 212, 212);
+    text-decoration: none;
+    font-size: 7.7vw;
+    font-weight: bold;
+}
+
+.TopNavSWText{
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    font-size: 5.7vw;
+    font-weight: bold;
+}
+
+.MenuIconTopNav {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    height: 5rem;
+    transition: 0.2s ease; 
+    border: 3px solid rgb(212, 212, 212);
+    width: 5rem;
+    position: fixed;
+    z-index: 99;
+}
+
+.menuicontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.MenuIconTopNav:hover, .MenuIconTopNav:focus {
+    background-color: rgb(65, 0, 0);
+    transition: 0.2s ease;  
+}
+
+.TopNavMenuContainer {
+    height: 0.1rem;
+    width: auto;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    position: fixed;
+}
+
+.TopNavDropContent2{
+    position: fixed;
+    margin-top: 3.1rem;
+    z-index: 99;
+}
+
+nav div{
+    background-color: #000000;
+    flex-direction: column;
+    width: auto;
+    font-family: 'rabbit';
+    display: none;
+    transition: 0.2s ease; 
+    width: 80vw;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 99;
+
+}
+
+.TopNavContentBox{
+    color: rgb(212, 212, 212);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    width: auto;
+    text-align: center;
+    border: 1px solid rgb(39, 39, 39);
+    font-size: 1rem;
+    transition: 0.2s ease;
+    z-index: 69;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.TopNavContentBox:hover {
+    background-color: rgb(65, 0, 0);
+    transition: 0.2s ease; 
+}
+
+.MainContent{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92vw;
+    margin-left: 4vw;
+    padding-top: 1rem;
+    height: auto;
+    padding-bottom: 4rem;
+    border-radius: 3rem;
+    border: 5px solid rgb(75, 0, 0);
+    margin-top: 5rem;
+    align-items: center;
+
+}
+
+.bigboldtext{
+    font-size: 9.3vw;
+    font-family: 'rabbit';
+    color:rgb(230, 230, 230);
+    text-align: center;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.smallboldtext{
+    font-size: 8vw;
+    font-family: 'rabbit';
+    color:rgb(230, 230, 230);
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0.7rem;
+    margin-bottom: 0.3rem;
+    line-height: 40px;
+}
+
+.smallerboldtext{
+    font-size: 5vw;
+    font-family: 'rabbit';
+    color:rgb(230, 230, 230);
+    font-weight: 600;
+}
+
+
+.TopNavMenuContainer{
+    position: absolute;
+    width: 100%;
+    top: 5rem;
+    margin:0;
+    width: 80vw;
+    left: 10vw;
+}
+
+.dropdown_menu-7{
+    animation: rotateMenu 200ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+.tiles{
+    display:flex;
+    margin-left: 4vw;
+    margin-top: 1.5rem;
+    margin-right: 4vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.maintile{
+    height: 39vw;
+    width: 39vw;
+    margin-bottom: 3vw;
+    font-family: 'rabbit';
+    color: rgb(230, 230, 230);
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    outline: 3px solid rgb(182, 182, 182);
+    transition: 0.3s ease; 
+}
+.maintile:hover .tileBG{
+    transform: scale(1.1);
+}
+.maintile:hover {
+    outline: 3px solid rgb(65, 0, 0);
+    transition: 0.3s ease; 
+}
+
+.tilecover{
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.774) 15%, rgba(0, 0, 0, 0) 35%, rgba(0,212,255,0) 100%);
+    height: 39vw;
+    width: 39vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+.tileBG{
+    background-image: url(IMG/SmallDarkOne.png);
+    background-size: cover;
+    background-position: center;
+    left:0; top:0;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+.D6BG{
+    background-image: url(IMG/D6.png);
+}
+.nosalisBG{
+    background-image: url(IMG/nosalisTN.png);
+}
+.hellbreathBG{
+    background-image: url(IMG/hellbreathfull.png);
+}
+
+.tiletext{
+    margin: 3px;
+    margin-top: auto;
+    font-size: 4vw;
+}
+
+.selectContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.SSelectContainer{
+    height: 100vh;
+    width: 50vw;
+}
+
+.MSelectContainer{
+    height: 100vh;
+    width: 50vw;
+}
+.Selectvid{
+    width: 50vw;
+}
+.selectlogocontainer{
+    display: flex;
+    justify-content: center;
+}
+.sselectlogo{
+    position: absolute;
+    height: 8rem;
+    margin-top: 5rem;
+    transition: 0.3s ease; 
+}
+.mselectlogo{
+    position: absolute;
+    height: 8rem;
+    margin-top: 5rem;
+    transition: 0.3s ease; 
+}
+.SSelectContainer:hover .VidBG{
+    display:none;
+}
+.MSelectContainer:hover .VidBG{
+    display:none;
+}
+.SSelectContainer:hover .sselectlogo{
+    height: 9rem;
+    transition: 0.3s ease; 
+}
+.MSelectContainer:hover .mselectlogo{
+    height: 9rem;
+    transition: 0.3s ease; 
+}
+.VidBG{
+    width: 50vw;
+}
+
+.news{
+    display:flex;
+    margin-top: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newstile{
+    width: 86vw;
+}
+
+.newsimg{
+    width: 86vw;
+    outline: 3px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    transition: 0.2s ease; 
+}
+
+.newstile:hover .newsimg {
+    outline: 3px solid rgb(65, 0, 0);
+    transition: 0.2s ease; 
+}
+
+.newstext{
+    color: rgb(230, 230, 230);
+    font-family: 'rabbit';
+    font-size: 5vw;
+    margin-bottom: 1.5rem;
+}
+
+.wikicontainer{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    font-family: 'rabbit';
+    color:rgb(230, 230, 230);
+}
+
+.wikitext{
+    width: 87vw;
+    height: auto;
+    font-size: 1.1rem;
+    font-family: 'rabbit';
+    color:rgb(230, 230, 230);
+    margin: auto;
+}
+
+.wikiinfocontainer{
+    display: flex;
+    width: 35vw;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    outline: 3px solid rgb(75, 0, 0);
+    margin-left: 1.1rem;
+    margin-bottom: 0.5rem;
+    float: right;
+}
+
+.wikiinfobox{
+    width: 100%;
+    outline: 3px solid rgb(65, 0, 0);
+    height: auto;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.wikiimg{
+    width: 33vw;
+    margin-top: 5px;
+    transition: ease 0.3s;
+}
+
+form{
+    display: flex;
+    width: 80vw;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 5vw;
+    
+}
+
+.formtext{
+    font-size: 5vw;
+    font-family: 'rabbit';
+    color:rgb(230, 230, 230);
+}
+
+input{
+    width: 80vw;
+    height: 10vw;
+    font-size: 4vw;
+    font-family: 'rabbit';
+    background-color: #00000000;
+    color: rgb(221, 221, 221);
+    border: none;
+    outline: 2px solid rgb(199, 199, 199);
+    margin-bottom: 2vw;
+    padding-left: 10px;
+}
+
+.submitter{
+    transition: 0.1s ease; 
+    cursor: pointer;
+}
+
+.submitter:hover{
+    background-color: rgb(116, 79, 0);
+    transition: 0.1s ease; 
+}
+
+.pda{
+    background-image: url(img/hollowpda.png);
+    background-size: cover;
+    background-position: center;
+    height: 60vw;
+    width: 90vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 5.5vw;
+    padding-left: 9vw;
+    padding-right: 9vw;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+
+.pdatext{
+    line-height: 15px;
+    margin-top: 0.5rem;
+    font-size: 4vw;
+}
+
+.typewriter{
+   overflow: hidden;
+   white-space: nowrap;
+   margin: 0 auto;
+   animation: typing 1.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+@keyframes rotateMenu {
+    0% {
+        transform: rotateX(-90deg)
+    }
+    100% {
+        transform: rotateX(0deg)
+    }
+
+}
+
+@font-face {
+    font-family: 'rabbit';
+    src: url('Fonts/whitrabt.woff') format('woff');
+}
+
+@media only screen and (min-width: 550px) {
+
+    footer{
+        text-decoration: none;
+        width: 100%;
+        height: 13rem;
+        margin-top: 2rem;
+        outline: 5px solid rgb(75, 0, 0);
+        background-color: #00000063;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-family: rabbit;
+        color: rgb(230, 230, 230);
+        font-size: 3rem;
+    }
+
+    footer div a{
+        text-decoration: none;
+        color: rgb(75, 0, 0);
+        transition: ease 0.2s;
+        font-size: 3.2vw;
+    }
+
+    body{
+        line-height: 35px;
+    }
+    .TopNavMWText{
+        display: none;
+    }
+    .TopNavSWText{
+        display: none;
+    }
+    .TopNavMWImage {
+        display: flex;
+        height: 6.9rem;
+        min-width: 22rem;
+        width: 23vw;
+    }
+    
+    .menuicontainer{
+        justify-content: left;
+    }
+
+    .topnavlogobox{
+        height: 7rem;
+        max-height: 7rem;
+    }
+
+    .TopNav{
+        background: linear-gradient(90deg, rgba(85, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.9) 100%);
+        width: 100%;
+        height: 7rem;
+    }
+
+    .LogoTopNav{
+        height: 7rem;
+        max-height: 7rem;
+    }
+    
+    .TopNavMetroBox{
+        height: 7rem;
+
+    }
+
+    .MenuIconTopNav {
+        margin-top: 8rem;
+        margin-left: 1rem;
+        height: 6.8rem;
+        width: auto;
+        position: fixed;
+        background-color: #000000;
+    }
+
+    .TopNavMenuContainer{
+        top: 14.8rem;
+        width: 30vw;
+        left: 1rem;
+        position: fixed;
+        z-index: 99;
+    }
+
+    .TopNavDropContent{
+        width: 30vw;
+    }
+
+    .TopNavDropContent2{
+        width: 30vw;
+        margin-top: 3.5rem;
+    }
+
+    .TopNavContentBox{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 30vw;
+        font-size: 2rem;
+    }
+
+    .bigboldtext{
+        font-size: 9vw;
+        line-height: 150px;
+    }
+
+    .smallerboldtext{
+        font-size: 2.5vw;
+    }
+
+    .MainContent{
+        margin-top: 10rem;
+        padding-top: 3rem;
+        padding-bottom: 11rem;
+    }
+
+    nav div a{
+        font-size: 3rem;
+    }
+
+    .maintile{
+        height: 18vw;
+        width: 18vw;
+        font-family: 'rabbit';
+        color: rgb(230, 230, 230);
+    }
+
+    .tiles{
+        margin-left: 8rem;
+        margin-top: 3rem;
+        margin-right: 8rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .tiletext{
+        margin: 2px;
+        margin-top: auto;
+        font-size: 1.5rem;
+    }
+
+    .tilecover{
+        position: absolute;
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.774) 15%, rgba(0, 0, 0, 0) 35%, rgba(0,212,255,0) 100%);
+        height: 18vw;
+        width: 18vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .wikitext{
+        font-size: 1.7vw;
+        font-family: 'rabbit';
+        color:rgb(230, 230, 230);
+        margin: auto;
+    }
+
+    .wikiinfocontainer{
+        width: 25vw;
+    }
+
+    .wikiimg{
+        width: 23vw;
+    }
+    
+    .smallboldtext{
+        font-size: 4rem;
+        margin-top: 1.5rem;
+
+    }
+
+    .news{
+        justify-content: space-around
+    }
+
+    .newstext{
+        font-size: 2vw;
+    }
+
+    .newstile{
+        width: 43vw;
+        height: auto;
+    }
+
+    .newsimg{
+        width: 43vw;
+        outline: 3px solid rgb(212, 212, 212);
+        border-radius: 5px;
+        transition: 0.2s ease;
+        height: 23vw;
+ 
+    }
+
+    form{
+        display: flex;
+        width: 80vw;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 5vw;
+        margin-top: 2rem;
+    }
+    
+    .formtext{
+        font-size: 4vw;
+        font-family: 'rabbit';
+    }
+    
+    input{
+        width: 45vw;
+        height: 5vw;
+        font-size: 2.5vw;
+        font-family: 'rabbit';
+        background-color: #00000000;
+        color: rgb(221, 221, 221);
+        border: none;
+        outline: 2px solid rgb(199, 199, 199);
+        margin-bottom: 3vw;
+        margin-top: 1vw;
+        padding-left: 10px;
+    }
+    
+    .submitter{
+        transition: 0.1s ease; 
+        cursor: pointer;
+    }
+    
+    .submitter:hover{
+        background-color: rgb(116, 79, 0);
+        transition: 0.1s ease; 
+    }
+    
+    .pda{
+        height: 50vw;
+        width: 33vw;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-top: 6vw;
+        padding-left: 4vw;
+        padding-right: 5vw;
+        margin-left: 5vw;
+        background-image: url(img/hollowpdav.png);
+    }
+    
+    .pdatext{
+        line-height: 40px;
+        margin-top: 2rem;
+        font-size: 2.5vw;
+        font-weight: 100;
+    }
+
+    .contactcontent{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+}
+
+
+#btnControl:checked + .TopNavMenuContainer .TopNavDropContent{
+    display:flex;
+}
+
+#btnControl2:checked + .TopNavMenuContainer2 .TopNavDropContent2{
+    display:flex;
+}
+
+.hidden{
+    display: none;
+}
